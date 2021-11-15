@@ -17,6 +17,7 @@ type Request struct {
 
 type Response struct {
 	Reply string `json:"reply,omitempty"`
+	Name  string `json:"name,omitempty"`
 }
 
 func HandlerWhats(c echo.Context) error {
